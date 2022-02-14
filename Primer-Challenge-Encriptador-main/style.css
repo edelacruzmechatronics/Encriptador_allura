@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    width: 100%;
+    display: block;
+    margin: 0;
+    min-height: 93vh;
+    background: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(20, 4, 110);
+    text-shadow: #f5f3f3 0 0 .09em;
+}
+
+.titulo_principal {
+    color: rgb(28, 16, 196);
+    font-size: 70px;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+}
+
+.formularios {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+}
+
+.form_encriptar,
+.form-desencriptar {
+    margin: 30px;
+}
+
+#entrada_texto, #salida_texto {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: rgb(3, 12, 150);
+    background-color: #ffffff;
+    border: 3px solid rgb(36, 14, 133);
+}
+
+.formularios button {
+    align-items: center;
+    border-radius: 1px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 10px;
+    box-shadow: 5px 0px 5px -5px #b3b1b1;
+    border: 3px solid rgb(5, 18, 207);
+    background-color: rgb(6, 13, 112);
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.formularios label {
+    text-align: center;
+}
+
+.botonizquierdo {
+    margin-left: 85px;
+}
+
+.botonderecho {
+    margin-left: 40px;
+}
+
+.pie {
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    bottom: 0;
+}

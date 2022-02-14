@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Primer Challenge Oracle </title>
+</head>
+<body>
+    <h1 class="titulo_principal">SECRET CODE</h1>
+    <section class="formularios">
+        <div class="form_encriptar">
+            <label for="input-texto"><h2>Escriba el texto a encriptar</h2></label>
+            <textarea id="entrada_texto" name="textarea" rows="15" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="Escriba su texto a encriptar aqui... no incluya caracteres especiales."></textarea>
+            <br>
+            <button class="botonizquierdo" onclick="botonEncriptar()">Encriptar</button>
+            <button class="botonderecho" onclick="botonDesencriptar()">Desencriptar</button>
+        </div>
+    
+        <div class="form-desencriptar">
+            <label for="output-texto"><h2 id="titulo-desencriptar">Mensaje encriptado</h2></label>
+            <textarea id="salida_texto" name="textarea" rows="15" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="aqui estara su mensaje encriptado..."></textarea>
+            <br>
+            <button class="botonizquierdo" onclick="botonCopiar()">Copy</button>
+        </div>
+    </section>
+
+    <footer class="pie">
+        <p>Hecho por Esthefanny De La Cruz</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
